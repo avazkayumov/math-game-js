@@ -4,7 +4,7 @@ let appendSeconds = document.querySelector(".seconds");
 let firstNumber = document.querySelector(".firstnumber");
 let operator = document.querySelector(".operator");
 let secondNumber = document.querySelector(".secondnumber");
-let audio = document.getElementById("myAudio");
+// let audio = document.getElementById("myAudio");
 
 let option1 = document.querySelector(".leftanswer");
 let option2 = document.querySelector(".centeranswer");
@@ -16,7 +16,6 @@ let minutes = 0;
 let interval;
 
 function render() {
-  console.log("render");
   let ques1 = Math.floor(Math.random() * 11);
   let ques2 = Math.floor(Math.random() * 11);
 
@@ -47,8 +46,8 @@ function render() {
       seconds = seconds + 5;
       render();
     } else {
-      audio.play();
-      console.log("false");
+      // audio.play();
+      // console.log("false");
     }
   });
 
@@ -57,8 +56,8 @@ function render() {
       seconds = seconds + 5;
       render();
     } else {
-      audio.play();
-      console.log("false");
+      // audio.play();
+      // console.log("false");
     }
   });
 
@@ -67,8 +66,8 @@ function render() {
       seconds = seconds + 5;
       render();
     } else {
-      audio.play();
-      console.log("false");
+      // audio.play();
+      // console.log("false");
     }
   });
 }
@@ -101,9 +100,7 @@ function timer() {
       });
     }
 
-   
-
-    appendMinutes.innerHTML = String(minutes).padStart(2, 0);
+    // appendMinutes.innerHTML = String(minutes).padStart(2, 0);
     appendSeconds.innerHTML = String(seconds).padStart(2, 0);
   }
 
